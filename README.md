@@ -43,7 +43,7 @@ After completing this assignment you should be able to
 
 ### Job Form Validation
 
-![link to full-screen mockup](mockups/lab-job-application-form-validation)
+![link to full-screen mockup](mockups/lab-job-application-form-validation.png)
 
 ---
 
