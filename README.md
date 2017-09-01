@@ -1,50 +1,49 @@
-# Responsive Design + SCSS - National Geographic
+# Interactive UI Components
 
 ## Context
-National Geographic originated as a popular print magazine that reports on interesting topics, discoveries, and developments in anthropology and nature. It now provides most of its content online and is looking for a front-end developer to build a responsive front-end for their *Photography* section. The designer has created mock ups of the mobile, tablet, and desktop prototypes.
+In order to become a competent front-end developer, it is a good idea to build common U.I. components. For this lab, you will build two components:
+1) user interface tabs that reveal content
+2) simple form validation for a simple job application.  
 
 ---
 
 ## Objectives
-- Create a mobile-first layout with elements whose styles change on the page based on the width of the viewport.
-- Incorporate SCSS into your styles workflow
+- Create the following interactive U.I. Components. You must create both the styles
 
 ### Learning Objectives
 After completing this assignment you should be able to
-- Use SCSS to make CSS coding quicker and easier
-- Use media queries to elements on the page based on the width of the viewport
-- Improve your attention to detail by implementing appropriate margin, padding, font-sizes, and column layouts based on a designer's specification
+- Use javascript to respond to 'click' events and form 'submit' events.
+- Use javascript to manipulate elements on the DOM.
+- Use programming logic inside your event-handlers to give accurate user feedback.
 
 ### Performance Objectives
-- Responsive first design. (Create your base styles and use `min-width` in your media queries to modify elements that change on wider viewports)
-- You should make use of SCSS:
-  + variables
-  + mixins
+- Reasonably good design.
+- You should use SCSS.
+- You should use vanilla javascript for all event listeners and DOM manipulations
 
 
 ### Deliverables
-- an `index.html` file with the content
+- an `index.html` file with links to 2 pages:
+  - `01-ui-tabs.html`
+  - `02-form-validation.html`
+- your `01-ui-tabs.html` should link to `ui-tabs.js` in a `<script>` tag
+- your `02-form-validation.html` should link to a `form-validation.js` in a `<script>` tag
 - a `main.scss` file in a `scss` directory with your styles that compiles to a `style.css` file inside a `css` directory
-- a site that replicates the styles as shown below
-- a site that uses CSS media queries and displays responsively as shown below
-- a public Github repository
+
 
 
 ---
 
 ## Mockups
 
-### Mobile
-*( < 768px )*
-![link to mobile mockup](mockups/natgeo-mobile.png)
+### UI Tabs
 
-### Tablet
-*( 768px - 1023px )*
-![link to full-screen mockup](mockups/natgeo-tablet.png)
+![link to full-screen mockup](mockups/lab-ui-tabs-demo.gif)
 
-### Desktop
-*( > 1024px )*
-![link to full-screen mockup](mockups/natgeo-tablet.png)
+
+### Job Form Validation
+
+![link to full-screen mockup](mockups/lab-job-application-form-validation)
 
 ---
 
@@ -54,31 +53,27 @@ After completing this assignment you should be able to
 1. Use the `gen-scss-project` script to create the files and folders for the project.
   ```bash
   cd ~/muktek/labs
-  gen-scss-project responsive-design-natgeo
+  gen-scss-project interactive-components-lab
   ```
-2. `cd` into `responsive-design-natgeo`
+2. `cd` into `interactive-components-lab`
 3. Use the `watch-scss` command in the project's root directory to compile the scss to 'watch' for changes in your `.scss` files and update your `style.css` file.
-4. Download image assets
-  ```sh
-  curl
-  https://raw.githubusercontent.com/muktek/lab--responsive-design-natgeo/image-files.zip > image-files.zip
-
-  unzip image-files.zip
-  ```
-
-#### Designer notes
-- the title fonts are _'Gill Sans'_, _'Century Gothic'_, _sans-serif_.
-- the fancy header font stack are  _'Georgia'_, _'Palatino'_, _serif_.
-- yellow  color is `#fecd2f`
-- dark grey color is `#333333`
-- light grey color is `#aaaaaa`
+4. Ensure you the relevant files:
+```
+- index.html
+- 01-ui-tabs.html
+     (links to ./js/ui-tabs.js)
+- 02-form-validation.html
+     (links to ./js/form-validation.js)
 
 
-#### Make sure you include fontawesome in your `<head/>` *before* your `style.css` file
-```html
-<head>
-      ...<!--  your title, meta tags etc. -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-      <link rel="stylesheet" href="./css/styles.css">
-</head>
++ scss
+  - main.scss
+
++ css
+  - styles.css
+
++ js
+  - ui-tabs.js
+  - form-validation.js
+
 ```
