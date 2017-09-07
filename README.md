@@ -37,13 +37,11 @@ After completing this assignment you should be able to
 ## Mockups
 
 ### UI Tabs
-
-![link to full-screen mockup](mockups/lab-ui-tabs-demo.gif)
+![ui tabs](mockups/lab-ui-tabs-demo.gif)
 
 
 ### Job Form Validation
-
-![link to full-screen mockup](mockups/lab-job-application-form-validation.png)
+![form validation](mockups/lab-job-application-form-validation.png)
 
 ---
 
