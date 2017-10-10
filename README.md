@@ -23,55 +23,44 @@ After completing this assignment you should be able to
 
 
 ### Deliverables
-- an `index.html` file with links to 2 pages:
-  - `01-ui-tabs.html`
-  - `02-form-validation.html`
-- your `01-ui-tabs.html` should link to `ui-tabs.js` in a `<script>` tag
-- your `02-form-validation.html` should link to a `form-validation.js` in a `<script>` tag
+- an `index.html` file with the interactive functionality 2 pages:
+  - `ex-01-ui-tabs.html`
+  - `ex-02-form-validation.html`
 - a `main.scss` file in a `scss` directory with your styles that compiles to a `style.css` file inside a `css` directory
-
-
+  - *Note*: the styles for the `ex-02-form-validation` are already complete
+- HTML markup + CSS styles + JS functionality for the UI Tabs exercise
+- JS functiality for the Form Validation exercise
 
 ---
 
-## Mockups
+## Demos
 
-### UI Tabs
-![ui tabs](mockups/lab-ui-tabs-demo.gif)
+### Exercise 01 - UI Tabs
+![ui tabs](demos/lab-ui-tabs-demo.gif)
 
 
-### Job Form Validation
-![form validation](mockups/lab-job-application-form-validation.png)
+### Exercise 02 - Job Form Validation
+![form validation](demos/form-validation-demo.gif)
 
 ---
 
 ## Additional Instructions
 
 #### Setup
-1. Use the `gen-scss-project` script to create the files and folders for the project.
-  ```bash
-  cd ~/muktek/labs
-  gen-scss-project interactive-components-lab
-  ```
-2. `cd` into `interactive-components-lab`
-3. Use the `watch-scss` command in the project's root directory to compile the scss to 'watch' for changes in your `.scss` files and update your `style.css` file.
-4. Ensure you the relevant files:
-```
-- index.html
-- 01-ui-tabs.html
-     (links to ./js/ui-tabs.js)
-- 02-form-validation.html
-     (links to ./js/form-validation.js)
+1. Create the project folder + download the files
 
+```sh
+# (1) Create the folder for the repo, and cd into it
+cd ~/muktek/Documents/labs
+mkdir lab--interactive-components
+cd lab--interactive-components
 
-+ scss
-  - main.scss
-
-+ css
-  - styles.css
-
-+ js
-  - ui-tabs.js
-  - form-validation.js
+#(2) download and unzip the project files
+curl
+unzip assignment-files.zip
 
 ```
+
+2. Link the `.js` files in the `.html` files.
+  - your `ex-01-ui-tabs.html` should link to `app-01.js` in a `<script>` tag
+  - your `ex-02-form-validation.html` should link to a `app-02.js` in a `<script>` tag
