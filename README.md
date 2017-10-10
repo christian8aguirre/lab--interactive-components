@@ -3,12 +3,11 @@
 ## Context
 In order to become a competent front-end developer, it is a good idea to build common U.I. components. For this lab, you will build two components:
 1) user interface tabs that reveal content
-2) simple form validation for a simple job application.  
+2) simple form validation for an account registration.  
 
 ---
 
 ## Objectives
-- Create the following interactive U.I. Components. You must create both the styles
 
 ### Learning Objectives
 After completing this assignment you should be able to
@@ -28,8 +27,8 @@ After completing this assignment you should be able to
   - `ex-02-form-validation.html`
 - a `main.scss` file in a `scss` directory with your styles that compiles to a `style.css` file inside a `css` directory
   - *Note*: the styles for the `ex-02-form-validation` are already complete
-- HTML markup + CSS styles + JS functionality for the UI Tabs exercise
-- JS functiality for the Form Validation exercise
+- For **UI Tabs**, you must create the HTML markup + CSS styles + JS functionality for the UI Tabs exercise
+- For **Form Validation**, you must create the JS functionality as shown in the demo.
 
 ---
 
@@ -56,7 +55,7 @@ mkdir lab--interactive-components
 cd lab--interactive-components
 
 #(2) download and unzip the project files
-curl
+curl https://raw.githubusercontent.com/muktek/lab--interactive-components/master/assignment-files.zip > assignment-files.zip
 unzip assignment-files.zip
 
 ```
