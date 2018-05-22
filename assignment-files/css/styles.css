@@ -658,5 +658,7 @@ img {
   margin: 0 auto;
   padding-top: 1rem;
   line-height: 1.5; }
+  #app-container a {
+    color: #1976D2; }
 
 /*# sourceMappingURL=styles.css.map */
