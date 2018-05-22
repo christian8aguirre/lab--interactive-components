@@ -1,6 +1,7 @@
 @import "./imports/_normalize.scss";
 // Don't touch
 @import "./imports/_form-exercise.scss";
+@import "./imports/_ui-tabs.scss";
 
 body{
   font-family: sans-serif;
@@ -15,4 +16,6 @@ img {
 #app-container{
   max-width: 800px;
   margin: 0 auto;
+  padding-top: 1rem;
+  line-height: 1.5;
 }
