@@ -65,6 +65,43 @@ var pressHTML = `
 
 
 /* 01 - UI TABS :: Your code below.... */
+var pestanas = document.querySelectorAll('.ui-tabs__tabslist li')
 
-document.querySelector('.ui-tabs__content')
-  .innerHTML = membershipHTML
+  pestanas.forEach(function (pes) {
+   
+
+    pes.addEventListener('click', function (e) {
+      
+      if (e.target.dataset.tab === 'membership') {
+        zero();
+        document.querySelector('.ui-tabs__content').innerHTML = membershipHTML;  
+        e.target.classList.value = 'ui-tabs__tab ui-tabs__tab--selected';
+        // console.log(e.target.classList.value);
+        
+      } else if (e.target.dataset.tab === 'programs') {
+        zero();
+        document.querySelector('.ui-tabs__content').innerHTML = programsHTML;  
+        e.target.classList.toggle('ui-tabs__tab--selected');
+      } else if (e.target.dataset.tab === 'screenings') {
+        zero();
+        document.querySelector('.ui-tabs__content').innerHTML = screeningsHTML;  
+        e.target.classList.toggle('ui-tabs__tab--selected');
+      } else if (e.target.dataset.tab === 'press') {
+        
+        zero();
+        document.querySelector('.ui-tabs__content').innerHTML = pressHTML;  
+        e.target.classList.toggle('ui-tabs__tab--selected');
+        
+      }
+      
+    });
+  });
+
+  function zero() {
+    var pestanas = document.querySelectorAll('.ui-tabs__tabslist li');
+    console.log(pestanas);
+    
+    pestanas.forEach(function (pes) {
+    pes.classList.value = 'ui-tabs__tab'
+    }
+    )}
