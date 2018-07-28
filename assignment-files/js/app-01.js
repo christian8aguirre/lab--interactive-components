@@ -62,7 +62,8 @@ var pressHTML = `
   <p><a href="#">Click to download and fill out form</a></p>
   <hr/>
 `
-
+document.querySelector('.ui-tabs__content')
+  .innerHTML = membershipHTML
 
 /* 01 - UI TABS :: Your code below.... */
 var pestanas = document.querySelectorAll('.ui-tabs__tabslist li')
