@@ -25,10 +25,12 @@ var formulario = document.forms.formulario;
     }
 
     var taxidTextBox = e.target.elements.taxid;
-    if ((taxidTextBox.value * 1) > 0) {
+    if ((taxidTextBox.value * 1) > 0 && taxidTextBox.value.length >= 10) {
         document.querySelector('.validation--tax-id').textContent = 'Success!!!';
+    } else if (taxidTextBox.value === ''){
+        document.querySelector('.validation--tax-id').textContent = 'Must provide Tax ID';
     } else {
-        document.querySelector('.validation--tax-id').textContent = 'Input field must contain a number > 0';
+        document.querySelector('.validation--tax-id').textContent = 'Input field must contain a number > 0 and is 10 digits';
     }
 
     var accountTextBox = e.target.elements.account;
